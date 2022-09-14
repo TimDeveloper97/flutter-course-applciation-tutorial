@@ -8,7 +8,7 @@ import '../../../shared/views/image_clipper.dart';
 import 'view.dart';
 
 class ArtistScreen extends StatelessWidget {
-  const ArtistScreen({required this.artist, super.key});
+  const ArtistScreen({required this.artist, Key? key});
 
   final Artist artist;
 

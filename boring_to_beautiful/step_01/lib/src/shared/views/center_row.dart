@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CenterRow extends StatelessWidget {
   const CenterRow({
-    super.key,
+    Key? key,
     required this.child,
   });
 

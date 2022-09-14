@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ArticleContent extends StatelessWidget {
   const ArticleContent({
-    super.key,
+    Key? key,
     required this.child,
     this.maxWidth = 960,
   });

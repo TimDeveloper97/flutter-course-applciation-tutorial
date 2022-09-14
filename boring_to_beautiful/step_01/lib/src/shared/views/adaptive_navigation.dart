@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AdaptiveNavigation extends StatelessWidget {
   const AdaptiveNavigation({
-    super.key,
+    Key? key,
     required this.destinations,
     required this.selectedIndex,
     required this.onDestinationSelected,

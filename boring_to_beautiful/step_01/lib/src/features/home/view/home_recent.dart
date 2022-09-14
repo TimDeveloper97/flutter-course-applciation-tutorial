@@ -9,7 +9,7 @@ import '../../../shared/views/outlined_card.dart';
 
 class HomeRecent extends StatelessWidget {
   const HomeRecent(
-      {super.key, required this.playlists, this.axis = Axis.horizontal});
+      {Key? key, required this.playlists, this.axis = Axis.horizontal});
 
   final List<Playlist> playlists;
   final Axis axis;

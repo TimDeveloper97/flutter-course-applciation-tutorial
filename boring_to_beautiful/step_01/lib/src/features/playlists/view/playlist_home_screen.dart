@@ -6,7 +6,7 @@ import '../../../shared/providers/providers.dart';
 import '../../../shared/views/views.dart';
 
 class PlaylistHomeScreen extends StatelessWidget {
-  const PlaylistHomeScreen({super.key});
+  const PlaylistHomeScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

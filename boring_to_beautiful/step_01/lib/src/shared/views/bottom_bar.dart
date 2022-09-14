@@ -12,7 +12,7 @@ import 'image_clipper.dart';
 /// Currently-playing informational bar that always spans the entire bottom
 /// of the UI.
 class BottomBar extends StatelessWidget implements PreferredSizeWidget {
-  const BottomBar({super.key});
+  const BottomBar({Key? key});
 
   @override
   Size get preferredSize => const Size.fromHeight(90);

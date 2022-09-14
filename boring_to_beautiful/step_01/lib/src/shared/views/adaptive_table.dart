@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AdaptiveTable<T> extends StatelessWidget {
   const AdaptiveTable({
-    super.key,
+    Key? key,
     required this.items,
     required this.itemBuilder,
     required this.rowBuilder,

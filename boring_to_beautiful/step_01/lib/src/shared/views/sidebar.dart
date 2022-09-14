@@ -9,7 +9,7 @@ final playlistProvider = PlaylistsProvider();
 final playlists = playlistProvider.playlists;
 
 class SideBar extends StatelessWidget {
-  const SideBar({super.key});
+  const SideBar({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class SideBar extends StatelessWidget {
 }
 
 class PlaylistNav extends StatelessWidget {
-  const PlaylistNav({super.key});
+  const PlaylistNav({Key? key});
 
   @override
   Widget build(BuildContext context) {

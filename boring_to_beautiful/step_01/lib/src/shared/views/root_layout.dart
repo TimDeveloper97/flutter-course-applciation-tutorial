@@ -10,7 +10,7 @@ import 'views.dart';
 
 class RootLayout extends StatelessWidget {
   const RootLayout({
-    super.key,
+    Key? key,
     required this.child,
     required this.currentIndex,
   });
@@ -67,7 +67,7 @@ class _Switcher extends StatelessWidget {
 
   _Switcher({
     required this.child,
-    super.key,
+    Key? key,
   });
 
   @override

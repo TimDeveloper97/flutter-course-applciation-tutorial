@@ -4,7 +4,7 @@ import 'outlined_card.dart';
 
 class ImageTile extends StatelessWidget {
   const ImageTile({
-    super.key,
+    Key? key,
     required this.image,
     required this.title,
     required this.subtitle,

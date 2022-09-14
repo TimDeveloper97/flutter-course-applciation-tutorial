@@ -6,7 +6,7 @@ import '../../../shared/extensions.dart';
 
 class HomeArtists extends StatelessWidget {
   const HomeArtists({
-    super.key,
+    Key? key,
     required this.artists,
     required this.constraints,
   });

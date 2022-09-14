@@ -9,7 +9,7 @@ import '../../playlists/view/playlist_songs.dart';
 import 'view.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 AdaptiveContainer(
-                  columnSpan: 12,
+                  columnSpan: 14,
                   child: Padding(
                     padding: const EdgeInsets.all(2), // Modify this line
                     child: Row(

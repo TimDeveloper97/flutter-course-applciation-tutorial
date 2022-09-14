@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class OutlinedCard extends StatefulWidget {
   const OutlinedCard({
-    super.key,
+    Key? key,
     required this.child,
     this.clickable = true,
   });

@@ -7,7 +7,7 @@ import 'providers/theme.dart';
 import 'router.dart';
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final settings = ValueNotifier(ThemeSettings(
-    sourceColor: Colors.pink, // Replace this color
+    sourceColor: const Color(0xff00cbe6), // Replace this color
     themeMode: ThemeMode.system,
   ));
   @override
@@ -36,12 +36,17 @@ class _MyAppState extends State<MyApp> {
                 valueListenable: settings,
                 builder: (context, value, _) {
                   // Create theme instance
+                  final theme = ThemeProvider.of(context); // Add this line
                   return MaterialApp.router(
                     debugShowCheckedModeBanner: false,
                     title: 'Flutter Demo',
                     // Add theme
                     // Add dark theme
                     // Add theme mode
+                    theme: theme
+                        .light(settings.value.sourceColor), // Add this line
+                    darkTheme: theme.dark(),
+                    themeMode: theme.themeMode(),
                     routeInformationParser: appRouter.routeInformationParser,
                     routeInformationProvider:
                         appRouter.routeInformationProvider,

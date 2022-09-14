@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../shared/views/views.dart';
 
 class HomeHighlight extends StatelessWidget {
-  const HomeHighlight({super.key});
+  const HomeHighlight({Key? key});
 
   @override
   Widget build(BuildContext context) {
