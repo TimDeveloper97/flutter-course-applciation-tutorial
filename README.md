@@ -1,4 +1,5 @@
 # Flutter codelabs
+https://codelabs.developers.google.com/codelabs
 
 [![Build Status](https://github.com/flutter/codelabs/workflows/Flutter%20CI/badge.svg)](https://github.com/flutter/codelabs/actions?workflow=Flutter%20CI)
 
